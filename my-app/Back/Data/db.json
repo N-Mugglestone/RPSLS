@@ -1,0 +1,16 @@
+{
+    "hobbies": [
+        {
+            "id": 1,
+            "title": "1st hobby name",
+            "datetime": "August 1, 2022, 1:00:00 AM",
+            "body": "first hobby description"
+        },
+        {
+            "id": 2,
+            "title": "2st hobby name",
+            "datetime": "August 2, 2022, 1:00:00 AM",
+            "body": "second hobby description"
+        }
+    ]
+}
