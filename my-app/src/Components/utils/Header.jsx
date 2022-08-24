@@ -1,25 +1,41 @@
 import Proptypes from 'prop-types'
 import { Link } from 'react-router-dom'
+import '../CSS/header.css'
 
 
 const Header = () => {
     return (
+
         <>
             <nav>
                 <nav className="navbar navbar-expand-lg navbar-dark">
-                    <div className="container-fluid">
-                        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div className="navbar-nav">
+                    <div className='container-fluid'>
+                        <div className="navbar-nav">
 
-                                <h1> Home </h1>
+                            <h1> Home </h1>
+                            <h1> Hobbies </h1>
+                            <h1> Wishlist </h1>
+                            <h1> Random </h1>
+                            <h1> tester </h1>
 
-                            </div>
                         </div>
                     </div>
                 </nav>
             </nav>
         </>
+
     )
 }
 
 export default Header;
+
+
+
+
+
+
+// <Link className="nav-link" to="/"> <h1> Home </h1> </Link>
+//                             <Link className="nav-link" to="/hobbies"> <h1> Hobbies </h1> </Link>
+//                             <Link className="nav-link" to="/wishlist"> <h1> Wishlist </h1> </Link>
+//                             <Link className="nav-link" to="/random"> <h1> Random </h1> </Link>
+//                             <Link className="nav-link" to="/tester"> <h1> tester </h1> </Link>
