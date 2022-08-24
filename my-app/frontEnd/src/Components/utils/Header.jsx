@@ -34,7 +34,7 @@ export default Header;
 
 
 
-// <Link className="nav-link" to="/"> <h1> Home </h1> </Link>
+//                             <Link className="nav-link" to="/"> <h1> Home </h1> </Link>
 //                             <Link className="nav-link" to="/hobbies"> <h1> Hobbies </h1> </Link>
 //                             <Link className="nav-link" to="/wishlist"> <h1> Wishlist </h1> </Link>
 //                             <Link className="nav-link" to="/random"> <h1> Random </h1> </Link>
