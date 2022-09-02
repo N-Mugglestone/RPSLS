@@ -16,6 +16,7 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<Home />}></Route>
+            <Route path="/hobbies" element={< api />}></Route>
           </Routes>
 
         </div>

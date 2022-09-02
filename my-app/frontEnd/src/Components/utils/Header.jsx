@@ -1,5 +1,5 @@
-import Proptypes from 'prop-types'
-import { Link } from 'react-router-dom'
+// import Proptypes from 'prop-types'
+// import { Link } from 'react-router-dom'
 import '../CSS/header.css'
 
 
@@ -9,6 +9,7 @@ const Header = () => {
         <>
             <nav>
                 <nav className="navbar navbar-expand-lg navbar-dark">
+                    <a className="navbar-brand" href='#'>Testing navbar</a>
                     <div className='container-fluid'>
                         <div className="navbar-nav">
 

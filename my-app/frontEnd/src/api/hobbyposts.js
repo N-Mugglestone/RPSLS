@@ -7,3 +7,5 @@ export default axios.create({
 
 //npx json-server -p 4000 -w data/db.json   this should start up the json server that holds the
 // information /posts etc  at this youtube https://www.youtube.com/watch?v=ZEKBDXGnD4s
+
+//this makes a json server.   find how to make it a mogo.db server instead
