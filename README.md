@@ -1,2 +1,2 @@
 # RPSLS
-Rock Paper Scissors Lizard Spock
+Full Stack for fun
