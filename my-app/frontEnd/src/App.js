@@ -5,6 +5,7 @@ import api from './api/hobbyposts.js';
 import Footer from "./Components/utils/footer";
 import Header from "./Components/utils/Header";
 import Home from "./Components/home";
+import Addhobbies from "./Components/Addhobbies";
 
 
 function App() {
@@ -14,9 +15,12 @@ function App() {
         <div className="App">
 
           <Header />
+
           <Routes>
+
             <Route path="/" element={<Home />}></Route>
-            <Route path="/hobbies" element={< api />}></Route>
+            <Route path="/Addhobbies" element={< Addhobbies />}></Route>
+
           </Routes>
 
         </div>
