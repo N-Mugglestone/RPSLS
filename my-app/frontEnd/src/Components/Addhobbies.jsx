@@ -2,10 +2,10 @@ import { useState } from "react";
 import PropTypes from "prop-types";
 import axios from "axios";
 
-import './CSS/Addhobbies.css';
+import './CSS/addHobbies.css';
 
 
-const Addhobbies = () => {
+const addHobbies = () => {
 
 
     const [newHobby, setNewHobby] = useState('');
@@ -15,12 +15,12 @@ const Addhobbies = () => {
     const hobbies = async (e) => {
         e.preventDefault()
 
-        const { title, description, } = newHobby;
+        const { title, description } = newHobby;
         // const newHobby = new Model(title, description, newAddhobbies)  - need to make a model in the backend for this to work
         
         if (title && description) {
             try {
-                const res = await axios.post('http://localhost:3000/Addhobbies', newHobby)
+                const res = await axios.post('http://localhost:3000/addHobbies', newHobby)
                 setNewHobby({
                     title: '',
                     description: '',
@@ -58,7 +58,7 @@ const Addhobbies = () => {
 }
 
 
-export default Addhobbies;
+export default addHobbies;
 
 
 
