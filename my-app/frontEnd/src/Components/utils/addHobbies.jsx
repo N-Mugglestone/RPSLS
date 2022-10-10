@@ -58,6 +58,14 @@ const addHobbies = () => {
 }
 
 
+addHobbies.PropTypes = {
+
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired
+
+};
+
+
 export default addHobbies;
 
 

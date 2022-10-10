@@ -1,5 +1,6 @@
 import "./CSS/home.css"
 
+
 const Home = () => {
 
     return (

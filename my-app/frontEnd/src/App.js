@@ -5,7 +5,7 @@ import api from './api/hobbyposts.js';
 import Footer from "./Components/utils/footer";
 import Header from "./Components/utils/Header";
 import Home from "./Components/home";
-import addHobbies from "./Components/Addhobbies";
+import addHobbies from "./Components/utils/addHobbies";
 
 
 function App() {
