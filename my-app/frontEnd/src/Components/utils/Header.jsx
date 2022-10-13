@@ -1,6 +1,6 @@
 // import Proptypes from 'prop-types'  may use later 
 import { Link } from 'react-router-dom'
-import '../CSS/header.css'
+
 
 
 const Header = () => {

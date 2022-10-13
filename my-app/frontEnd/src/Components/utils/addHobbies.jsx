@@ -5,23 +5,23 @@ import axios from "axios";
 import '../SCSS/addHobbies'
 
 
-const addHobbies = (newHobby) => {
+const addHobbies = (makeNewHobby) => {
 
-    const { title, description } = newHobby;
+    const { title, description } = makeNewHobby;
 // const newHobby = new Model(title, description, newAddhobbies)  - need to make a model in the backend for this to work
 
     const [newHobby, setNewHobby] = useState('');
     const [addhobbyMessage, setAddHobbyMessage] = useState('');
     
 
-    const addNewhobby = async (e) => {
+    const addNewHobby = async (e) => {
         e.preventDefault()
 
+        const newPost = new Model(title, description, newHobby)
         
-        
-        if (Object.keys(newHobby).includes(title && description)) {
+        if (Object.keys(newPost).includes(title && description)) {
             try {
-                const res = await axios.post('http://localhost:3000/addHobbies', newHobby)
+                const res = await axios.post('http://localhost:3000/addHobbies', newPost)
                 setNewHobby({
                     title: '',
                     description: '',
@@ -39,12 +39,12 @@ const addHobbies = (newHobby) => {
             <div id="postComponent">
                 <div>
                     <h1> Add a new Hobby </h1>
-                    <form onSubmit={addNewhobby}>
+                    <form onSubmit={addNewHobby}>
                         <textarea
                             onChange={e => setNewHobby(e.target.value)} type="text" placeholder="Write here..." value={newHobby} ></textarea>
                         {addhobbyMessage && <small>{addhobbyMessage}</small>}
                         <br />
-                        <input id="newHobbyButton" type="submit" value="Hobby" />
+                        <input id="newPostButton" type="submit" value="Hobby" />
                     </form>
                 </div>
             </div>
@@ -53,10 +53,9 @@ const addHobbies = (newHobby) => {
 }
     
 addHobbies.PropTypes = {
-    newHobby: PropTypes.oneOfType({
         title: PropTypes.string.isRequired,
         description: PropTypes.string.isRequired 
-        })
+    
     }
 
 

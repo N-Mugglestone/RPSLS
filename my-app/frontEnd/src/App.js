@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom"
 import './Components/utils/footer'
 import './App.css';
-import api from './api/hobbyposts.js';
+//import api from './api/hobbyposts.js';
 import Footer from "./Components/utils/footer";
-import Header from "./Components/utils/Header";
+import Header from "./Components/utils/header";
 import Home from "./Components/home";
-import addHobbies from "./Components/utils/addHobbies";
+//import addHobbies from "./Components/utils/addHobbies";
 
 
 function App() {
