@@ -18,6 +18,7 @@ const Header = () => {
                             <h1> <Link className="nav-link" to="/Wishlist"> <em>Wishlist</em> </Link> </h1>
                             <h1> <Link className="nav-link" to="/random"> <em>Random</em> </Link> </h1>
                             <h1> <Link className="nav-link" to="/bucketlist"> <em>Bucket List</em> </Link> </h1>
+                            <h1><Link className="nav-Link" to="/addHobby"><em> Add Hobby</em> </Link> </h1>
 
                         </div>
                     </div>

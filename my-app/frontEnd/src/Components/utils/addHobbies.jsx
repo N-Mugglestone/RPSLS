@@ -36,6 +36,7 @@ const addHobbies = (makeNewHobby) => {
 
     return (
         <>
+
             <div id="postComponent">
                 <div>
                     <h1> Add a new Hobby </h1>
