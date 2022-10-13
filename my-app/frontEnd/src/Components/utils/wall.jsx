@@ -1,1 +1,3 @@
-// this will be the display of the already logged hobbies and maybe a link to the wishlist 
+// this will be the display images that link to each element ... maybe just a page to play with at some point
+
+

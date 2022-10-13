@@ -1,5 +1,5 @@
-// import Proptypes from 'prop-types'
-// import { Link } from 'react-router-dom'
+// import Proptypes from 'prop-types'  may use later 
+import { Link } from 'react-router-dom'
 import '../CSS/header.css'
 
 
@@ -13,11 +13,11 @@ const Header = () => {
                     <div className='container-fluid'>
                         <div className="navbar-nav">
 
-                            <h1> Home </h1>
-                            <h1> Hobbies </h1>
-                            <h1> Wishlist </h1>
-                            <h1> Random </h1>
-                            <h1> tester </h1>
+                            <h1> <Link className="nav-link" to="/"> <em>Home</em> </Link> </h1>
+                            <h1> <Link className="nav-link" to="/hobbies"> <em>Hobbies</em> </Link> </h1>
+                            <h1> <Link className="nav-link" to="/Wishlist"> <em>Wishlist</em> </Link> </h1>
+                            <h1> <Link className="nav-link" to="/random"> <em>Random</em> </Link> </h1>
+                            <h1> <Link className="nav-link" to="/bucketlist"> <em>Bucket List</em> </Link> </h1>
 
                         </div>
                     </div>
