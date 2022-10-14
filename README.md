@@ -27,17 +27,33 @@ This project is a full stack project that I am desiging as a proof of concept.
  
  What did i plan to do again? 
  
- Who is this random person talking to me? 
- 
  Where is my left shoe(always seems to be the left one)?
  
- Where did I leave my battle axe... well maybe not this one, but the general point stands (If this one is you, then that is awesome!)
+ Where did I leave my spare battle axe... well maybe not this one, but the general point stands (If this one is you, then that is awesome!)
  
+ <div align="center">
+ <img src="https://media3.giphy.com/media/fxtEJZQa0LsVYh6I9d/giphy.webp?cid=ecf05e47p5h5qxci4hj11lktpcuzsp6snd52krbntoyhfxz7&rid=giphy.webp&ct=s">
+ </div>
+ 
+ This project is for people who may find something amazing and then forget it the moment they stop thinking about it, that amazing idea gone to the wind, never to be seen again. It is frustrating when that happens,whether that is a book title, or amazing app that offers great discount holidays. 
+ 
+ The idea of this project is to let those people make a note and expand on it later if they want to. 
+ 
+ Maybe there was an add that showed a amazing holiday location, make a note the **Bucket List** section, maybe even link the add video to watch again later. 
+ 
+ Hear a funny joke that you want to laugh at again and again, make a note in **Random**.
+ 
+ Take up painting as a hobby, make a note in **Hobbies** with images of paintings, videos of tutorials, the whole works!
+ 
+ Do you want a new awesome PC setup (who doesn't want a awesome PC set up?), make a note in **Wishlist** and link places that sell it, put in images to salvate over. 
+ 
+ <div align="center">
+ <img src="https://media3.giphy.com/media/4nOJYoXKWtpeC9dIJN/200.webp?cid=ecf05e47fmfw97bnyu50ik3mvkjppjknofb1g3t6drzc3s2w&rid=200.webp&ct=s" height="250" width=""250>
+ </div>
  
 ---
  
- 
- https://media3.giphy.com/media/fxtEJZQa0LsVYh6I9d/giphy.webp?cid=ecf05e47p5h5qxci4hj11lktpcuzsp6snd52krbntoyhfxz7&rid=giphy.webp&ct=s
+
  
 ### User Stories 
 
