@@ -1,6 +1,6 @@
  <div align="center"> <h1>   :small_orange_diamond: :large_orange_diamond: RPSLS :large_orange_diamond: :small_orange_diamond:  <h1> </div> 
 
-This project is a full stack project that I am desiging as a proof of concept project. 
+This project is a full stack project that I am desiging as a proof of concept. 
 
 :small_blue_diamond: What can I put together, what can't I? &nbsp;
 
