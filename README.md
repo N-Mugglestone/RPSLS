@@ -25,7 +25,7 @@ I want to be able to input my hobbies : random : wishlist : bucketlist
 into a webpage  
 
 As a user
-I want to see my hobbies... on a wall
+I want to see my hobbies : random : wishlist : bucketlist on a wall
 with a title and description displaying what they are
 
 As a user 
