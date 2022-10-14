@@ -37,9 +37,13 @@ so I can see when they were made
 I want them to show the date they were made
 
 
-optional: 
+In the future: 
 
 As a user
 so I can keep the lists up to date
 I want to be able to alter them (E.g. add, alter and delete them as needed)
+ 
+As a user 
+so that I can see videos and reviews of my hobbies
+I want to be able to put in a video link to go with the hobbies
 ```
