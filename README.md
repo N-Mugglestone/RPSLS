@@ -4,7 +4,11 @@ This project is a full stack project that I am desiging as a proof of concept pr
 
 :small_blue_diamond: What can I put together, what can't I? &nbsp;
 
-:small_blue_diamond: What problems have five solutions and which can cause the least amount of problems down the line. 
+:small_blue_diamond: What problems can have five solutions and which ones cause the least amount of problems down the line. 
+
+:small_blue_diamond: I want to experiment and constantly improve this project, to such a degree that whilst the user stories will be complete, this never will be. 
+
+:diamond_shape_with_a_dot_inside: With programming ever changing this project will always be under construction, always improving and always advancing just as I am going to be. 
 
 <div align="center">
 <img src="https://media2.giphy.com/media/Xcq0EK200tWqqQdYig/200w.webp?cid=ecf05e4750al00a5m2azeymgdnchwe7j39osvkfmqdwgk9ud&rid=200w.webp&ct=s"/>
