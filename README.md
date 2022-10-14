@@ -16,7 +16,29 @@ This project is a full stack project that I am desiging as a proof of concept.
 <img src="https://media0.giphy.com/media/MqYyxRtyYB1PMWzswt/giphy.webp?cid=ecf05e47yx2znl56ukd5cckad9dgkluevw4zivkkpv27cohs&rid=giphy.webp&ct=ts" title="questions" alt="questions" height="200" width="200"/>
 </div>
 
-
+---
+ ## What is this project? Why does it exist? Who is it for? Just why in generl? 
+ 
+ To answer all those simply... this project is for people who are forgetful. Simple right? 
+ 
+ Everybody is forgetful it's a fact of life. 
+ 
+ Where did I put my keys? 
+ 
+ What did i plan to do again? 
+ 
+ Who is this random person talking to me? 
+ 
+ Where is my left shoe(always seems to be the left one)?
+ 
+ Where did I leave my battle axe... well maybe not this one, but the general point stands (If this one is you, then that is awesome!)
+ 
+ 
+---
+ 
+ 
+ https://media3.giphy.com/media/fxtEJZQa0LsVYh6I9d/giphy.webp?cid=ecf05e47p5h5qxci4hj11lktpcuzsp6snd52krbntoyhfxz7&rid=giphy.webp&ct=s
+ 
 ### User Stories 
 
 ```
