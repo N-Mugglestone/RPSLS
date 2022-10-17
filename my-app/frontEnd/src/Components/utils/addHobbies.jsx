@@ -1,31 +1,31 @@
 import { useState } from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import axios from "axios";
+import Model from './Model'
 
-import '../SCSS/addHobbies'
+// import '../SCSS/addHobbies.scss'
 
 
-const addHobbies = (makeNewHobby) => {
+const AddHobbies = () => {
 
-    const { title, description } = makeNewHobby;
 // const newHobby = new Model(title, description, newAddhobbies)  - need to make a model in the backend for this to work
+    
 
+    //figue out how to give a title to each individual hobby ... maybe in the return statement?
+    
     const [newHobby, setNewHobby] = useState('');
     const [addhobbyMessage, setAddHobbyMessage] = useState('');
     
 
-    const addNewHobby = async (e) => {
+    const makeNewHobby = async (e) => {
         e.preventDefault()
 
-        const newPost = new Model(title, description, newHobby)
+        const newPost = new Model( newHobby)
         
-        if (Object.keys(newPost).includes(title && description)) {
+        if (Object.keys(newPost)) {
             try {
-                const res = await axios.post('http://localhost:3000/addHobbies', newPost)
-                setNewHobby({
-                    title: '',
-                    description: '',
-                })
+                const res = await axios.post('http://localhost:3000/AddHobbies/', newPost)
+                setNewHobby('')
                 setAddHobbyMessage(res.data.message)
             } catch (err) {
                 setAddHobbyMessage('Not happening, no hobbies here today!')
@@ -40,7 +40,7 @@ const addHobbies = (makeNewHobby) => {
             <div id="postComponent">
                 <div>
                     <h1> Add a new Hobby </h1>
-                    <form onSubmit={addNewHobby}>
+                    <form onSubmit={makeNewHobby}>
                         <textarea
                             onChange={e => setNewHobby(e.target.value)} type="text" placeholder="Write here..." value={newHobby} ></textarea>
                         {addhobbyMessage && <small>{addhobbyMessage}</small>}
@@ -49,18 +49,19 @@ const addHobbies = (makeNewHobby) => {
                     </form>
                 </div>
             </div>
+            
         </>
     )
 }
     
-addHobbies.PropTypes = {
-        title: PropTypes.string.isRequired,
-        description: PropTypes.string.isRequired 
+// addHobbies.PropTypes = {
+//         title: PropTypes.string.isRequired,
+//         description: PropTypes.string.isRequired 
     
-    }
+//     }
 
 
-export default addHobbies;
+export default AddHobbies;
 
 
 

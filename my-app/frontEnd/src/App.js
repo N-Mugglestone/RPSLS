@@ -5,6 +5,7 @@ import './App.css';
 import Footer from "./Components/utils/footer";
 import Header from "./Components/utils/header";
 import Home from "./Components/home";
+import AddHobbies from "./Components/utils/addHobbies";
 //import addHobbies from "./Components/utils/addHobbies";
 
 
@@ -19,7 +20,8 @@ function App() {
           <Routes>
 
             <Route path="/" element={<Home />} />
-            <Route path="/addHobbies" element={< addHobbies />} />
+
+            <Route path="/addHobbies" element={< AddHobbies />} />
 
           </Routes>
 
