@@ -42,7 +42,8 @@ const AddHobbies = () => {
                     <h1> Add a new Hobby </h1>
                     <form onSubmit={makeNewHobby}>
                         <textarea
-                            onChange={e => setNewHobby(e.target.value)} type="text" placeholder="Write here..." value={newHobby} ></textarea>
+                            onChange={e => setNewHobby(e.target.value)} type="text" placeholder="Please input title here 
+                            and then write description" value={newHobby} ></textarea>
                         {addhobbyMessage && <small>{addhobbyMessage}</small>}
                         <br />
                         <input id="newPostButton" type="submit" value="Hobby" />
