@@ -3,7 +3,7 @@ import axios from "axios";
 import Model from './Model'
 
 
-const AddWishList = () => {
+const AddRandom = () => {
 
 
     const [newRandomList, setNewRandomList] = useState('');
@@ -17,7 +17,7 @@ const AddWishList = () => {
 
         if (Object.keys(newPost)) {
             try {
-                const res = await axios.post('http://localhost:3000/AddWishList/', newPost)
+                const res = await axios.post('http://localhost:3000/AddRandom/', newPost)
                 setNewRandomList('')
                 setaddRandomMessage(res.data.message)
             } catch (err) {
@@ -48,4 +48,4 @@ const AddWishList = () => {
     )
 }
 
-export default AddWishList;
+export default AddRandom;

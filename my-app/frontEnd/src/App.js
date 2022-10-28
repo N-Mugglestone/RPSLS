@@ -6,7 +6,9 @@ import Footer from "./Components/utils/footer";
 import Header from "./Components/utils/header";
 import Home from "./Components/home";
 import AddHobbies from "./Components/utils/addHobbies";
-//import addHobbies from "./Components/utils/addHobbies";
+import AddBucketList from "./Components/utils/addBucketList"
+import AddRandom from "./Components/utils/addRandom"
+import AddWishList from "./Components/utils/addWishList"
 
 
 function App() {
@@ -22,6 +24,9 @@ function App() {
             <Route path="/" element={<Home />} />
 
             <Route path="/addHobbies" element={< AddHobbies />} />
+            <Route path="/addBucketList" element={<AddBucketList />} />
+            <Route path="/addRandom" element={< AddRandom />} />
+            <Route path="/addWishList" element={< AddWishList />} />
 
           </Routes>
 

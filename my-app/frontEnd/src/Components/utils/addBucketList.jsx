@@ -35,7 +35,7 @@ const AddBucketList = () => {
                     <h1> Add a new item to the BucketList </h1>
                     <form onSubmit={makeNewBucketItem}>
                         <textarea
-                            onChange={e => setNewHobby(e.target.value)} type="text" placeholder="Please input title here 
+                            onChange={e => setNewBucketList(e.target.value)} type="text" placeholder="Please input title here 
                             and then write description" value={newBucketList} ></textarea>
                         {addBucketMessage && <small>{addBucketMessage}</small>}
                         <br />
