@@ -1,3 +1,4 @@
+import Wall from "./utils/wall";
 
 
 const Home = () => {
@@ -8,8 +9,9 @@ const Home = () => {
             <h1> The central system</h1>
             <div className="row">
                 <div className="column">
+                    <p> This is the first line of whatever should be here</p>
 
-                    <p> random stuff or whatever goes here</p>
+                    {Wall}
 
                 </div>
             </div>

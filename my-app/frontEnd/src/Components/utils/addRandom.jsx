@@ -39,7 +39,7 @@ const AddRandom = () => {
                             and then write description" value={newRandomList} ></textarea>
                         {addRandomMessage && <small>{addRandomMessage}</small>}
                         <br />
-                        <input id="newPostButton" type="submit" value="RandomListItem" />
+                        <input id="newPostButton" type="submit" value="Add to Random List" />
                     </form>
                 </div>
             </div>

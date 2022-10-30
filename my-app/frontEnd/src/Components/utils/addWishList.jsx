@@ -39,7 +39,7 @@ const AddWishList = () => {
                             and then write description" value={newWishList} ></textarea>
                         {addWishMessage && <small>{addWishMessage}</small>}
                         <br />
-                        <input id="newPostButton" type="submit" value="WishListItem" />
+                        <input id="newPostButton" type="submit" value="Add to Wish list" />
                     </form>
                 </div>
             </div>

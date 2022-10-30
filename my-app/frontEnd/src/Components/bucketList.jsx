@@ -18,7 +18,7 @@ const bucketList = () => {
 
     return (
         <>
-            {addBucketList}
+            {BucketListItem}
         </>
     )
 }

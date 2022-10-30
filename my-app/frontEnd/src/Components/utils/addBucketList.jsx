@@ -39,7 +39,7 @@ const AddBucketList = () => {
                             and then write description" value={newBucketList} ></textarea>
                         {addBucketMessage && <small>{addBucketMessage}</small>}
                         <br />
-                        <input id="newPostButton" type="submit" value="BucketListItem" />
+                        <input id="newPostButton" type="submit" value="Add to BucketList" />
                     </form>
                 </div>
             </div>
@@ -47,5 +47,27 @@ const AddBucketList = () => {
         </>
     )
 }
+
+// MAYBE SHOVE THIS IN ANOTHER FILE? 
+// function BList({ bListBody }) {
+
+//     const { bListContent } = bListBody
+//     const formattedDate = new Date(timeStamp).toDateString()
+
+//     return (
+//         <>
+//             <div className="card">
+//                 <div className="container">
+//                     <h4>{formattedDate}</h4>
+//                     <h3> {bListBody}</h3>
+//                 </div>
+//             </div>
+//         </>
+//     )
+
+// }
+
+
+
 
 export default AddBucketList;
