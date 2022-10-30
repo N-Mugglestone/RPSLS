@@ -11,7 +11,7 @@ const Home = () => {
                 <div className="column">
                     <p> This is the first line of whatever should be here</p>
 
-                    {Wall}
+                    {/* {Wall} */}
 
                 </div>
             </div>
@@ -22,3 +22,4 @@ const Home = () => {
 }
 
 export default Home;
+

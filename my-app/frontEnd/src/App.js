@@ -31,6 +31,7 @@ function App() {
             <Route path="/addBucketList" element={<AddBucketList />} />
             <Route path="/addRandom" element={< AddRandom />} />
             <Route path="/addWishList" element={< AddWishList />} />
+
             <Route path="/Hobbies" element={< Hobbies />} />
             <Route path="/BucketList" element={<BucketList />} />
             <Route path="/Random" element={< Random />} />

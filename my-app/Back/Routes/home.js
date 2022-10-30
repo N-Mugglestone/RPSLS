@@ -4,4 +4,5 @@ const router = express.Router();
 
 router.route('/')
 
-export { router as home }
+
+export { router as Home }

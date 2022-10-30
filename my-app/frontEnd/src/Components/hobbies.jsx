@@ -22,12 +22,12 @@ function Hobbies({ hobbiesBody }) {
 
 }
 
-Hobbies.PropTypes = {
-    hobbiesBody: PropTypes.shape({
-        title: PropTypes.string.isRequired,
-        description: PropTypes.string.isRequired
+// Hobbies.PropTypes = {
+//     hobbiesBody: PropTypes.shape({
+//         title: PropTypes.string.isRequired,
+//         description: PropTypes.string.isRequired
 
-    })
-}
+//     })
+// }
 
 export default Hobbies;

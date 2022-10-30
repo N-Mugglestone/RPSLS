@@ -3,7 +3,7 @@ import addBucketList from './utils/addBucketList'
 import { useEffect, useState } from 'react';
 import axios from 'axios'
 
-const bucketList = () => {
+const BucketList = () => {
 
     const [bucketArray, setBucketArray] = useState([]);
 
@@ -16,13 +16,15 @@ const bucketList = () => {
         getBucket();
     }, [])
 
-    return (
-        <>
-            {BucketListItem}
-        </>
-    )
+    // return (
+    //     <>
+    //         { }
+    //     </>
+    // )
 }
 
 addBucketList.prototype = {
 
 }
+
+export default BucketList;
