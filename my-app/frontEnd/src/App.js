@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom"
-import './Components/utils/footer'
+
 import './App.css';
 //import api from './api/hobbyposts.js';
 import Footer from "./Components/utils/footer";
@@ -9,6 +9,10 @@ import AddHobbies from "./Components/utils/addHobbies";
 import AddBucketList from "./Components/utils/addBucketList"
 import AddRandom from "./Components/utils/addRandom"
 import AddWishList from "./Components/utils/addWishList"
+import Wishlist from "./Components/wishlist"
+import Random from "./Components/random"
+import BucketList from "./Components/bucketList"
+import Hobbies from "./Components/hobbies"
 
 
 function App() {
@@ -27,6 +31,10 @@ function App() {
             <Route path="/addBucketList" element={<AddBucketList />} />
             <Route path="/addRandom" element={< AddRandom />} />
             <Route path="/addWishList" element={< AddWishList />} />
+            <Route path="/Hobbies" element={< Hobbies />} />
+            <Route path="/BucketList" element={<BucketList />} />
+            <Route path="/Random" element={< Random />} />
+            <Route path="/WishList" element={< Wishlist />} />
 
           </Routes>
 

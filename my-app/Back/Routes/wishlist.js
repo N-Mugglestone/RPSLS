@@ -1,5 +1,4 @@
 import express from 'express';
-import Wishlist from '../Wishlist/wishlistSchema.js';
 
 const router = express.Router();
 
@@ -12,12 +11,12 @@ router.route(`/`)
 
             newWishlist.save(err => {
                 if (err) {
-                    res.status(400).send(`Adding wishlist failed, try again? `)
+                    res.status(400).send(`Cannot reach Wishlist, try again? `)
                 } else {
 
-                } res.status(200).send(`wishlist is a success`)
+                } res.status(200).send(`Access to Wishlist granted`)
             })
 
         })
 
-export { router as addWishlist };
+export { router as Wishlist };
