@@ -21,7 +21,7 @@ const AddBucketList = () => {
                 setNewBucketList('')
                 setaddBucketMessage(res.data.message)
             } catch (err) {
-                setaddBucketMessage('Not happening, the Bucket has ran away')
+                setaddBucketMessage('Not happening, the Bucket has holes in it')
             }
         }
     }

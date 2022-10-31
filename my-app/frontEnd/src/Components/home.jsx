@@ -1,5 +1,5 @@
-import Wall from "./utils/wall";
 
+import './Styles/home.css'
 
 const Home = () => {
 
@@ -11,7 +11,7 @@ const Home = () => {
                 <div className="column">
                     <p> This is the first line of whatever should be here</p>
 
-                    {/* {Wall} */}
+
 
                 </div>
             </div>

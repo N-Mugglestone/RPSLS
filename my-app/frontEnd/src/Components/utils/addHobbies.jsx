@@ -3,25 +3,27 @@ import { useState } from "react";
 import axios from "axios";
 import Model from './Model'
 
-// import '../SCSS/addHobbies.scss'
 
+
+
+// on this page I need the name of a hobby - a image linking to it - a brief description
+//  - and a place to add a comment or message
 
 const AddHobbies = () => {
 
-// const newHobby = new Model(title, description, newAddhobbies)  - need to make a model in the backend for this to work
-    
+    // const newHobby = new Model(title, description, newAddhobbies)  - need to make a model in the backend for this to work
 
-    //figue out how to give a title to each individual hobby ... maybe in the return statement?
-    
+
+
     const [newHobby, setNewHobby] = useState('');
     const [addhobbyMessage, setAddHobbyMessage] = useState('');
-    
+
 
     const makeNewHobby = async (e) => {
         e.preventDefault()
 
-        const newPost = new Model( newHobby)
-        
+        const newPost = new Model(newHobby)
+
         if (Object.keys(newPost)) {
             try {
                 const res = await axios.post('http://localhost:3000/AddHobbies/', newPost)
@@ -50,38 +52,17 @@ const AddHobbies = () => {
                     </form>
                 </div>
             </div>
-            
+
         </>
     )
 }
-    
+
 // addHobbies.PropTypes = {
 //         title: PropTypes.string.isRequired,
-//         description: PropTypes.string.isRequired 
-    
+//         description: PropTypes.string.isRequired
+
 //     }
 
 
+
 export default AddHobbies;
-
-
-
-
-
-// on this page I need the name of a hobby - a image linking to it - a brief description
-    //  - and a place to add a comment or message
-    
-    
-    
-    
-    
-    // return (
-    //     <>
-    //         <h1> Input new hobby </h1>
-    //         <form onSubmit={hobbies}>
-    //             <label className="formLabel" htmlFor="title"> Title </label>
-    //             <br />
-
-    //         </form>
-    //     </>
-    // )

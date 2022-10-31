@@ -4,6 +4,7 @@
 import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import BucketList from '../bucketList'
 
 const Wall = () => {
 
@@ -22,6 +23,10 @@ const Wall = () => {
         }
         getBucket()
     }, [])
+
+    const bList = bucketArray?.map(bucketlist => {
+        return < BucketList bucketBody={bucketlist} />
+    })
 
 
     useEffect(() => {
@@ -49,6 +54,15 @@ const Wall = () => {
         }
         getWish()
     }, [])
+
+
+    return (
+        <>
+            {bList}
+
+        </>
+    )
+
 }
 
 Wall.prototype = {
@@ -58,11 +72,5 @@ Wall.prototype = {
     wishArray: PropTypes.array
 }
 
-// return (
-//     <>
-//         { }
-
-//     </>
-// )
 
 export default Wall;

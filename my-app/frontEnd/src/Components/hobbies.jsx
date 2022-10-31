@@ -22,12 +22,16 @@ function Hobbies({ hobbiesBody }) {
 
 }
 
-// Hobbies.PropTypes = {
-//     hobbiesBody: PropTypes.shape({
-//         title: PropTypes.string.isRequired,
-//         description: PropTypes.string.isRequired
+Hobbies.propTypes = {
 
-//     })
-// }
+    hobbiesContent: PropTypes.shape({
+        description: PropTypes.string,
+        timeStamp: PropTypes.oneOfType([
+            PropTypes.string,
+            PropTypes.instanceOf(Date)
+        ]),
+        hobbiesBody: PropTypes.string
+    })
+}
 
 export default Hobbies;

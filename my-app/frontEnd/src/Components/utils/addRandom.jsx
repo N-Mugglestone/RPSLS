@@ -21,7 +21,7 @@ const AddRandom = () => {
                 setNewRandomList('')
                 setaddRandomMessage(res.data.message)
             } catch (err) {
-                setaddRandomMessage('Not happening, the Bucket has ran away')
+                setaddRandomMessage('Random thing is not happening')
             }
         }
     }
