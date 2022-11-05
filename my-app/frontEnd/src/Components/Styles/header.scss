@@ -1,13 +1,11 @@
- $primaryBtn: red;
+nav {
+    // flex-direction: row;
+    // text-align: center;
+    background-color: rgb(33, 201, 33);
+    word-spacing: 20px;
 
- nav {
+}
 
-     display: flex;
-     text-align: center;
-     background-color: rgb(33, 201, 33);
-
- }
-
- h1 {
-     font-size: large;
- }
+h1 {
+    font-size: large;
+}
