@@ -11,10 +11,10 @@ router.route(`/`)
 
             newRegister.save(err => {
                 if (err) {
-                    res.status(400).send(`Cannot reach register page, try again? `)
+                    res.status(400).send(`Cannot register, try again? `)
                 } else {
 
-                } res.status(200).send(`Page access success`)
+                } res.status(200).send(`register success`)
             })
 
         })

@@ -15,19 +15,19 @@ const Header = () => {
                         <div className='collapse navbar-collapse' id="navbarNavAltMarkup"></div>
                         <div className="navbar-nav">
 
-                            <h1> <Link className="nav-link" to="/"> <em>Home</em> </Link> </h1>
+                            <Link className="nav-link" to="/"> <em>Home</em> </Link>
 
-                            <h1> <Link className="nav-link" to="/hobbies"> <em>Hobbies</em> </Link> </h1>
-                            <h1> <Link className="nav-link" to="/wishlist"> <em>Wishlist</em> </Link> </h1>
-                            <h1> <Link className="nav-link" to="/random"> <em>Random</em> </Link> </h1>
-                            <h1> <Link className="nav-link" to="/bucketlist"> <em>Bucket List</em> </Link> </h1>
-                            <br />
-                            <h1><Link className="nav-Link" to="/addHobbies"><em> Add Hobby</em> </Link> </h1>
-                            <h1><Link className="nav-Link" to="/addWishlist"><em> Add to Wishlist</em> </Link> </h1>
-                            <h1><Link className="nav-Link" to="/addRandom"><em> Add Random</em> </Link> </h1>
-                            <h1><Link className="nav-Link" to="/addBucketList"><em> Add to Bucket List</em> </Link> </h1>
+                            <Link className="nav-link" to="/hobbies"> <em>Hobbies</em> </Link>
+                            <Link className="nav-link" to="/wishlist"> <em>Wishlist</em> </Link>
+                            <Link className="nav-link" to="/random"> <em>Random</em> </Link>
+                            <Link className="nav-link" to="/bucketlist"> <em>Bucket List</em> </Link>
 
-                            <h1><Link className="nav-Link" to="/register"><em> Register</em> </Link> </h1>
+                            <Link className="nav-Link" to="/addHobbies"><em> Add Hobby</em> </Link>
+                            <Link className="nav-Link" to="/addWishlist"><em> Add to Wishlist</em> </Link>
+                            <Link className="nav-Link" to="/addRandom"><em> Add Random</em> </Link>
+                            <Link className="nav-Link" to="/addBucketList"><em> Add to Bucket List</em> </Link>
+
+                            <Link className="nav-Link" to="/register"><em> Register</em> </Link>
 
 
                         </div>
@@ -49,12 +49,12 @@ const Header = () => {
     //                     <div className='collapse navbar-collapse' id="navbarNavAltMarkup"></div>
     //                     <div className="navbar-nav mr-auto">
 
-    //                         <h1> <Link className="nav-link" to="/"> <em>Home</em> </Link> </h1>
+    //                         <Link className="nav-link" to="/"> <em>Home</em> </Link> 
 
-    //                         <h1> <Link className="nav-link" to="/hobbies"> <em>Hobbies</em> </Link> </h1>
-    //                         <h1> <Link className="nav-link" to="/Wishlist"> <em>Wishlist</em> </Link> </h1>
-    //                         <h1> <Link className="nav-link" to="/random"> <em>Random</em> </Link> </h1>
-    //                         <h1> <Link className="nav-link" to="/bucketlist"> <em>Bucket List</em> </Link> </h1>
+    //                         <Link className="nav-link" to="/hobbies"> <em>Hobbies</em> </Link> 
+    //                         <Link className="nav-link" to="/Wishlist"> <em>Wishlist</em> </Link> 
+    //                         <Link className="nav-link" to="/random"> <em>Random</em> </Link> 
+    //                         <Link className="nav-link" to="/bucketlist"> <em>Bucket List</em> </Link> 
     //                         <br />
 
     //                         <Dropdown>
@@ -62,10 +62,10 @@ const Header = () => {
     //                                 Add a new item
     //                             </Dropdown.Toggle>
     //                             <Dropdown.Menu>
-    //                                 <Dropdown.Item> <h1><Link className="nav-Link" to="/AddHobbies"><em> Add Hobby</em> </Link> </h1></Dropdown.Item>
-    //                                 <Dropdown.Item> <h1><Link className="nav-Link" to="/addWishlist"><em> Add to Wishlist</em> </Link> </h1> </Dropdown.Item>
-    //                                 <Dropdown.Item> <h1><Link className="nav-Link" to="/addRandom"><em> Add Random</em> </Link> </h1></Dropdown.Item>
-    //                                 <Dropdown.Item> <h1><Link className="nav-Link" to="/addBucketList"><em> Add to Bucket List</em> </Link> </h1></Dropdown.Item>
+    //                                 <Dropdown.Item><Link className="nav-Link" to="/AddHobbies"><em> Add Hobby</em> </Link> </Dropdown.Item>
+    //                                 <Dropdown.Item><Link className="nav-Link" to="/addWishlist"><em> Add to Wishlist</em> </Link>  </Dropdown.Item>
+    //                                 <Dropdown.Item><Link className="nav-Link" to="/addRandom"><em> Add Random</em> </Link> </Dropdown.Item>
+    //                                 <Dropdown.Item><Link className="nav-Link" to="/addBucketList"><em> Add to Bucket List</em> </Link> </Dropdown.Item>
     //                             </Dropdown.Menu>
     //                         </Dropdown>
 
