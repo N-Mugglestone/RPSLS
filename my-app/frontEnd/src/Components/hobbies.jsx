@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 function Hobbies({ hobbiesBody }) {
 
-    const { hobbiesContent, timeStamp } = hobbiesBody;
+    const { timeStamp, hobbiesContent } = hobbiesBody;
     const formatterDate = new Date(timeStamp).toDateString();
 
     return (
@@ -25,12 +25,12 @@ function Hobbies({ hobbiesBody }) {
 Hobbies.propTypes = {
 
     hobbiesContent: PropTypes.shape({
+        _id: PropTypes.string,
         description: PropTypes.string,
         timeStamp: PropTypes.oneOfType([
             PropTypes.string,
-            PropTypes.instanceOf(Date)
         ]),
-        hobbiesBody: PropTypes.string
+        hobbiesBody: PropTypes.string,
     })
 }
 

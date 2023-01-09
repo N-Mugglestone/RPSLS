@@ -19,4 +19,4 @@ router.route(`/`)
 
         })
 
-export { router as Wishlist };
+export { router as wishlist };

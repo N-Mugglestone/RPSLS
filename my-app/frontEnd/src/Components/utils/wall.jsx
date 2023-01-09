@@ -4,15 +4,14 @@
 import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import BucketList from '../bucketList'
+import BucketList from '../bucketList';
+import Hobbies from '../hobbies';
 
 const Wall = () => {
 
     const [bucketArray, setBucketArray] = useState([]);
-
-
-
     const [hobbiesArray, setHobbiesArray] = useState([]);
+
     const [randomArray, setRandomArray] = useState([]);
     const [wishArray, setWishArray] = useState([]);
 
@@ -37,6 +36,10 @@ const Wall = () => {
         getHobbies()
     }, [])
 
+    const hList = hobbiesArray?.map(Hobbies => {
+        return < Hobbies hobbiesBody={Hobbies} />
+    })
+
 
     useEffect(() => {
         const getRandom = async () => {
@@ -59,6 +62,7 @@ const Wall = () => {
     return (
         <>
             {bList}
+            {hList}
 
         </>
     )

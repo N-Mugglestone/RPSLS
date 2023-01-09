@@ -1,5 +1,4 @@
 import { useState } from "react";
-// import PropTypes from "prop-types";
 import axios from "axios";
 import Model from './Model'
 
@@ -56,13 +55,6 @@ const AddHobbies = () => {
         </>
     )
 }
-
-// addHobbies.PropTypes = {
-//         title: PropTypes.string.isRequired,
-//         description: PropTypes.string.isRequired
-
-//     }
-
 
 
 export default AddHobbies;

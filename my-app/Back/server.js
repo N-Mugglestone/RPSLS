@@ -6,12 +6,13 @@ import cors from 'cors';
 import { home } from './Routes/home.js';
 import { Bucketlist } from './Routes/BucketList';
 import { hobbies } from './Routes/hobbies.js';
-import { Wishlist } from './Routes/wishlist.js';
+import { wishlist } from './Routes/wishlist.js';
 import { Random } from './Routes/random.js';
 import { addBucketList } from './Routes/addBucketList'
 import { addHobbies } from './Routes/addHobbies'
 import { addWishlist } from './Routes/addWishList'
 import { addRandom } from './Routes/addRandom'
+import { register } from './Routes/register'
 
 
 dotenv.config({ path: '.env.${process.env.NODE_ENV}' });
@@ -28,12 +29,13 @@ app.use(cors());
 app.use('/', home)
 app.use('/bucketList', Bucketlist)
 app.use('/hobbies', hobbies)
-app.use('/wishlist', Wishlist)
+app.use('/wishlist', wishlist)
 app.use('/random', Random)
 app.use('/addBucketList', addBucketList)
 app.use('/addHobbies', addHobbies)
 app.use('/addWishlist', addWishlist)
 app.use('/addRandom', addRandom)
+app.use('/register', register)
 
 
 const main = async () => {
