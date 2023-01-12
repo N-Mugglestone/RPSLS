@@ -4,7 +4,7 @@ import morgan from 'morgan';
 import cors from 'cors';
 
 import { home } from './Routes/home.js';
-import { Bucketlist } from './Routes/BucketList';
+import { Bucketlist } from './Routes/BucketList.js';
 import { hobbies } from './Routes/hobbies.js';
 import { wishlist } from './Routes/wishlist.js';
 import { Random } from './Routes/random.js';
