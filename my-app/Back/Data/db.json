@@ -1,22 +1,20 @@
-{
-    "hobbies": [
-        {
-            "id": 1,
-            "title": "1st hobby name",
-            "datetime": "August 1, 2022, 1:00:00 AM",
-            "body": "first hobby description"
-        },
-        {
-            "id": 2,
-            "title": "2st hobby name",
-            "datetime": "August 2, 2022, 1:00:00 AM",
-            "body": "second hobby description"
-        },
-        {
-            "id": 3,
-            "title": "3rd hobby name",
-            "datetime": "August 3, 2022, 1:00:00 AM",
-            "body": "third hobby description"
-        }
-    ]
-}
+[
+    {
+        "firstName": "Alex",
+        "secondName": "Scott",
+        "timeStamp": "2023-01-01T21:00:00:000Z",
+        "postContent": "Post One"
+    },
+    {
+        "firstName": "Dorian",
+        "secondName": "Wake",
+        "timeStamp": "2023-01-02T21:00:00:000Z",
+        "postContent": "Post Two"
+    },
+    {
+        "firstName": "Silas",
+        "secondName": "Magna",
+        "timeStamp": "2023-01-03T21:00:00:000Z",
+        "postContent": "Post Three"
+    }
+]

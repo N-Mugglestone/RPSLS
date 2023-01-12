@@ -1,6 +1,8 @@
 export default class Model {
-    constructor(title, hobbiesBody) {
-        this.title = title;
-        this.hobbiesCOntent = hobbiesBody
+    constructor(firstName, secondName, timeStamp, postBody) {
+        this.firstName = firstName;
+        this.secondName = secondName;
+        this.timeStamp = timeStamp;
+        this.postContent = postBody;
     }
 }

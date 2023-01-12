@@ -1,17 +1,11 @@
 import { useState } from "react";
+import PropTypes from 'prop-types';
 import axios from "axios";
+
 import Model from './Model'
 
 
-
-
-// on this page I need the name of a hobby - a image linking to it - a brief description
-//  - and a place to add a comment or message
-
-const AddHobbies = () => {
-
-    // const newHobby = new Model(title, description, newAddhobbies)  - need to make a model in the backend for this to work
-
+const AddHobbies = (user) => {
 
 
     const [newHobby, setNewHobby] = useState('');
@@ -21,15 +15,15 @@ const AddHobbies = () => {
     const makeNewHobby = async (e) => {
         e.preventDefault()
 
-        const newPost = new Model(newHobby)
+        const newPost = new Model(firstName, secondName, Date, newHobby)
 
-        if (Object.keys(newPost)) {
+        if (Object.keys(newPost).length) {
             try {
                 const res = await axios.post('http://localhost:3000/AddHobbies/', newPost)
                 setNewHobby('')
                 setAddHobbyMessage(res.data.message)
             } catch (err) {
-                setAddHobbyMessage('Not happening, no hobbies here today!')
+                setAddHobbyMessage('Nope, not happening, no hobbies here today!')
             }
         }
     }
@@ -41,6 +35,7 @@ const AddHobbies = () => {
             <div id="postComponent">
                 <div>
                     <h1> Add a new Hobby </h1>
+                    <h2 className="postName">{firstName} {secondName} </h2>
                     <form onSubmit={makeNewHobby}>
                         <textarea
                             onChange={e => setNewHobby(e.target.value)} type="text" placeholder="Please input title here 
@@ -56,5 +51,14 @@ const AddHobbies = () => {
     )
 }
 
+AddHobbies.propTypes = {
+    user: PropTypes.oneOfType([
+        PropTypes.bool,
+        PropTypes.shape({
+            firstName: PropTypes.string,
+            secondName: PropTypes.string
+        })
+    ])
+}
 
 export default AddHobbies;
