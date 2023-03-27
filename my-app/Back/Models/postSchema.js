@@ -9,4 +9,4 @@ const peepSchema = new mongoose.Schema({
 
 const Post = mongoose.model("Peep", peepSchema)
 
-export default Post;
+export default Post;   
