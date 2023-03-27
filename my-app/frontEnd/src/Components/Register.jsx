@@ -4,9 +4,59 @@ import axios from 'axios';
 
 const Register = () => {
 
+    const [newUser, setNewUser] = useState({
+        firstName: '',
+        secondName: '',
+        email: '',
+        password: ''
+    });
+    const [submitted, setSubmitted] = useState(false);
+
+    const register = async (e) => {
+
+        e.preventDefault()
+        const { firstName, secondName, email, password } = newUser;
+        if (firstName && secondName && email && password) {
+            try {
+                const res = await axios.post('http://localhost:3000/register', newUser)
+                setNewUser({
+                    firstName: '',
+                    secondName: '',
+                    email: '',
+                    password: ''
+                })
+                if (res.data.message === "success") {
+                    setSubmitted(true)
+                    return
+                }
+                setSubmitted(res.data.message)
+            } catch (err) {
+                console.log(err)
+            }
+        }
+    }
+
+    const handleChange = e => {
+        const { name, value } = e.target;
+        setNewUser({
+            newUser,
+            [name]: value
+        })
+    }
+
+    if (submitted === "user exists") {
+        return (
+            <>
+                <h2>{submitted}</h2>
+                <p> You already have a account</p>
+                <Link to="/login</>"> Sign in </Link>
+            </>
+        )
+    }
+
     return (
         <>
-            {/* {submitted && <Navigate to="/login" />} */}
+            {submitted && <Navigate to="/login" />}
             <h1> Create Account</h1>
             <form onSubmit={register}>
                 <label className="formLabel" htmlFor='firstName'>First name</label>

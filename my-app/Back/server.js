@@ -8,11 +8,11 @@ import { Bucketlist } from './Routes/BucketList.js';
 import { hobbies } from './Routes/hobbies.js';
 import { wishlist } from './Routes/wishlist.js';
 import { Random } from './Routes/random.js';
-import { addBucketList } from './Routes/addBucketList'
-import { addHobbies } from './Routes/addHobbies'
-import { addWishlist } from './Routes/addWishList'
-import { addRandom } from './Routes/addRandom'
-import { register } from './Routes/register'
+import { addBucketList } from './Routes/addBucketList.js'
+import { addHobbies } from './Routes/addHobbies.js'
+import { addWishlist } from './Routes/addWishList.js'
+import { addRandom } from './Routes/addRandom.js'
+import { register } from './Routes/register.js'
 
 
 dotenv.config({ path: '.env.${process.env.NODE_ENV}' });

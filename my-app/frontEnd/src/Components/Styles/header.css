@@ -1,8 +1,10 @@
 nav {
   display: flex;
   text-align: center;
-  /* background-color: rgb(33, 39, 201); */
-  font-size: large;
+  background-color: aquamarine;
+  font-size: xx-large;
+  word-spacing: 20px;
 }
 
-/*# sourceMappingURL=header.css.map */
+
+/*# sourceMappingURL=header.css.map*/

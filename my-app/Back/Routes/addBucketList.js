@@ -1,5 +1,5 @@
 import express from 'express';
-import BucketList from '../BucketList/bucketListSchema.js';
+import Post from '../Models/postSchema'
 
 const router = express.Router();
 
@@ -8,7 +8,7 @@ router.route(`/`)
 
         (req, res) => {
             console.log(req.body);
-            const newBucketList = new BucketList(req.body);
+            const newBucketList = new Post(req.body);
 
             newBucketList.save(err => {
                 if (err) {

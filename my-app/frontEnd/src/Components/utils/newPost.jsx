@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 
 
-function Posts({ postBody }) {
+const Posts = ({ postBody }) => {
 
     const { firstName, secondName, timeStamp, postContent } = postBody;
     const formattedDate = new Date(timeStamp).toDateString()
@@ -11,7 +11,6 @@ function Posts({ postBody }) {
             <div className="card">
                 <div className="container">
                     <h4 className='PostName'>{firstName}{secondName}</h4>
-                    <h2 className='userHandle'>{userHandle}</h2>
                     <h5> {formattedDate}</h5>
                     <p> {postContent} </p>
 
@@ -37,4 +36,4 @@ Posts.propTypes = {
 
 
 
-export default Peeps;
+export default Posts;

@@ -20,14 +20,15 @@ const Header = () => {
                             <Link className="nav-link" to="/hobbies"> <em>Hobbies</em> </Link>
                             <Link className="nav-link" to="/wishlist"> <em>Wishlist</em> </Link>
                             <Link className="nav-link" to="/random"> <em>Random</em> </Link>
-                            <Link className="nav-link" to="/bucketlist"> <em>Bucket List</em> </Link>
+                            <Link className="nav-link" to="/bucketlist"> <em>Bucket-List</em> </Link>
 
-                            <Link className="nav-Link" to="/addHobbies"><em> Add Hobby</em> </Link>
-                            <Link className="nav-Link" to="/addWishlist"><em> Add to Wishlist</em> </Link>
-                            <Link className="nav-Link" to="/addRandom"><em> Add Random</em> </Link>
-                            <Link className="nav-Link" to="/addBucketList"><em> Add to Bucket List</em> </Link>
+                            <Link className="nav-Link" to="/addHobbies"><em>Add-Hobby</em> </Link>
+                            <Link className="nav-Link" to="/addWishlist"><em>Add-to-Wishlist</em> </Link>
+                            <Link className="nav-Link" to="/addRandom"><em>Add-Random</em> </Link>
+                            <Link className="nav-Link" to="/addBucketList"><em>Add-to-Bucket List</em> </Link>
 
-                            <Link className="nav-Link" to="/register"><em> Register</em> </Link>
+                            <Link className="nav-Link" to="/login"><em>Login</em></Link>
+                            <Link className="nav-Link" to="/register"><em>Register</em> </Link>
 
 
                         </div>
