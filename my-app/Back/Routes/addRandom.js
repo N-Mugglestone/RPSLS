@@ -1,5 +1,5 @@
 import express from 'express';
-import Random from '../Random/randomSchema.js';
+import Random from '../Models/randomSchema.js';
 
 const router = express.Router();
 
@@ -15,7 +15,8 @@ router.route(`/`)
                     res.status(400).send(`Adding random failed, try again? `)
                 } else {
 
-                } res.status(200).send(`random is a success`)
+                    res.status(200).send(`random is a success`)
+                }
             })
 
         })

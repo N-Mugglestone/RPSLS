@@ -71,8 +71,6 @@ const Register = () => {
                 <br />
                 <input type="email" id="new-user-email" name="email" value={newUser.email} onChange={handleChange} placeholder="Email" />
                 <br />
-                <label className="formLabel" htmlFor="userHandle">User handle</label>
-                <br />
                 <label className="formLabel" htmlFor='password'>Password</label>
                 <br />
                 <input type="password" id="new-user-password" name="password" value={newUser.password} onChange={handleChange} placeholder="Password" />

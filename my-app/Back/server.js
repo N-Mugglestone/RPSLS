@@ -3,16 +3,16 @@ import dotenv from 'dotenv';
 import morgan from 'morgan';
 import cors from 'cors';
 
-import { home } from './Routes/home.js';
+import { Home } from './Routes/home.js';
 import { Bucketlist } from './Routes/BucketList.js';
-import { hobbies } from './Routes/hobbies.js';
+import { Hobbies } from './Routes/Hobbies.js';
 import { wishlist } from './Routes/wishlist.js';
 import { Random } from './Routes/random.js';
 import { addBucketList } from './Routes/addBucketList.js'
 import { addHobbies } from './Routes/addHobbies.js'
 import { addWishlist } from './Routes/addWishList.js'
 import { addRandom } from './Routes/addRandom.js'
-import { register } from './Routes/register.js'
+import { Register } from './Routes/register.js'
 
 
 dotenv.config({ path: '.env.${process.env.NODE_ENV}' });
@@ -26,16 +26,16 @@ app.use(morgan('tiny'));
 app.use(express.json());
 app.use(cors());
 
-app.use('/', home)
+app.use('/', Home)
 app.use('/bucketList', Bucketlist)
-app.use('/hobbies', hobbies)
+app.use('/hobbies', Hobbies)
 app.use('/wishlist', wishlist)
 app.use('/random', Random)
 app.use('/addBucketList', addBucketList)
 app.use('/addHobbies', addHobbies)
 app.use('/addWishlist', addWishlist)
 app.use('/addRandom', addRandom)
-app.use('/register', register)
+app.use('/register', Register)
 
 
 const main = async () => {

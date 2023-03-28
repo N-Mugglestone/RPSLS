@@ -14,7 +14,8 @@ router.route(`/`)
                     res.status(400).send(`Cannot reach hobbies,  try again? `)
                 } else {
 
-                } res.status(200).send(`Page access success`)
+                    res.status(200).send(`Page access success`)
+                }
             })
 
         })

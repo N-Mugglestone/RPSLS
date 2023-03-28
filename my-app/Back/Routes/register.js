@@ -14,7 +14,8 @@ router.route(`/`)
                     res.status(400).send(`Cannot register, try again? `)
                 } else {
 
-                } res.status(200).send(`register success`)
+                    res.status(200).send(`register success`)
+                }
             })
 
         })

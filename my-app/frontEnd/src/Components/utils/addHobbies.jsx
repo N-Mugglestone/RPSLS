@@ -2,11 +2,12 @@ import { useState } from "react";
 import PropTypes from 'prop-types';
 import axios from "axios";
 
-import Model from './Model'
+import Model from './Model.jsx'
 
 
-const AddHobbies = (user) => {
+const AddHobbies = ({ user }) => {
 
+    const { firstName, secondName } = user;
 
     const [newHobby, setNewHobby] = useState('');
     const [addhobbyMessage, setAddHobbyMessage] = useState('');

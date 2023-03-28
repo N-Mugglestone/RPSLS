@@ -1,5 +1,5 @@
 import express from 'express';
-import Post from '../Models/postSchema'
+import Post from '../Models/postSchema.js'
 
 const router = express.Router();
 
@@ -14,8 +14,8 @@ router.route(`/`)
                 if (err) {
                     res.status(400).send(`Adding BucketList failed, try again? `)
                 } else {
-
-                } res.status(200).send(`BucketList is a success`)
+                    res.status(200).send(`BucketList addition success`)
+                }
             })
 
         })

@@ -5,6 +5,6 @@ const hobbiesSchema = new mongoose.Schema({
     description: { type: String, required: true },
 });
 
-const Hobbies = mongoose.model("Hobby", hobbiesSchema)
+const Hobbies = mongoose.model("Hobbies", hobbiesSchema)
 
 export default Hobbies;

@@ -15,21 +15,22 @@ const Header = () => {
                         <div className='collapse navbar-collapse' id="navbarNavAltMarkup"></div>
                         <div className="navbar-nav">
 
-                            <Link className="nav-link" to="/"> <em>Home</em> </Link>
+                            <div style={{ whiteSpace: 'nowrap' }}>
+                                <Link className="nav-link" to="/"> <em>Home</em> </Link>&nbsp;
 
-                            <Link className="nav-link" to="/hobbies"> <em>Hobbies</em> </Link>
-                            <Link className="nav-link" to="/wishlist"> <em>Wishlist</em> </Link>
-                            <Link className="nav-link" to="/random"> <em>Random</em> </Link>
-                            <Link className="nav-link" to="/bucketlist"> <em>Bucket-List</em> </Link>
+                                <Link className="nav-link" to="/hobbies"> <em>Hobbies</em> </Link> &nbsp;
+                                <Link className="nav-link" to="/wishlist"> <em>Wishlist</em> </Link>&nbsp;
+                                <Link className="nav-link" to="/random"> <em>Random</em> </Link>&nbsp;
+                                <Link className="nav-link" to="/bucketlist"> <em>Bucket List</em> </Link>&nbsp;
 
-                            <Link className="nav-Link" to="/addHobbies"><em>Add-Hobby</em> </Link>
-                            <Link className="nav-Link" to="/addWishlist"><em>Add-to-Wishlist</em> </Link>
-                            <Link className="nav-Link" to="/addRandom"><em>Add-Random</em> </Link>
-                            <Link className="nav-Link" to="/addBucketList"><em>Add-to-Bucket List</em> </Link>
+                                <Link className="nav-Link" to="/addHobbies"><em><text>Add Hobby</text></em> </Link>&nbsp;
+                                <Link className="nav-Link" to="/addWishlist"><em>Add to Wishlist</em> </Link>&nbsp;
+                                <Link className="nav-Link" to="/addRandom"><em>Add Random</em> </Link>&nbsp;
+                                <Link className="nav-Link" to="/addBucketList"><em>Add to Bucket List</em> </Link>&nbsp;
 
-                            <Link className="nav-Link" to="/login"><em>Login</em></Link>
-                            <Link className="nav-Link" to="/register"><em>Register</em> </Link>
-
+                                <Link className="nav-Link" to="/login"><em>Login</em></Link> &nbsp;
+                                <Link className="nav-Link" to="/register"><em>Register</em> </Link>
+                            </div>
 
                         </div>
                     </div>

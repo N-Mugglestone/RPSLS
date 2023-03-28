@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import Post from '../postSchema'
+import Post from './postSchema'
 
 const bucketListSchema = new mongoose.Schema({
     firstName: { type: String, required: true },

@@ -13,6 +13,8 @@ import Wishlist from "./Components/wishlist"
 import Random from "./Components/random"
 import BucketList from "./Components/bucketList"
 import Hobbies from "./Components/hobbies"
+import Login from "./Components/login";
+import Register from "./Components/Register"
 
 
 function App() {
@@ -36,6 +38,9 @@ function App() {
             <Route path="/BucketList" element={<BucketList />} />
             <Route path="/Random" element={< Random />} />
             <Route path="/WishList" element={< Wishlist />} />
+
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={< Register />} />
 
           </Routes>
 

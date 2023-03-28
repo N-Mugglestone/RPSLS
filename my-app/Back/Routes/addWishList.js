@@ -1,5 +1,5 @@
 import express from 'express';
-import Wishlist from '../Wishlist/wishListSchema.js';
+import Wishlist from '../Models/wishlistSchema.js';
 
 const router = express.Router();
 
@@ -15,7 +15,8 @@ router.route(`/`)
                     res.status(400).send(`Adding to WishList failed, try again? `)
                 } else {
 
-                } res.status(200).send(`Wishlist is a success`)
+                    res.status(200).send(`Wishlist is a success`)
+                }
             })
 
         })
